@@ -68,7 +68,7 @@ export function Navbar() {
             <Button
               onClick={() => {
                 const message = encodeURIComponent(
-                  "Olá, vim pelo site e gostaria de falar com um advogado. Pode me ajudar?"
+                  "Olá, vim pelo site e gostaria de falar com o Dr. Sidnei Nardini. Pode me ajudar?"
                 );
                 window.open(`https://wa.me/5517997720489?text=${message}`, "_blank");
               }}
@@ -113,7 +113,7 @@ export function Navbar() {
                 <Button
                   onClick={() => {
                     const message = encodeURIComponent(
-                      "Olá, vim pelo site e gostaria de falar com um advogado. Pode me ajudar?"
+                      "Olá, vim pelo site e gostaria de falar com o Dr. Sidnei Nardini. Pode me ajudar?"
                     );
                     window.open(`https://wa.me/5517997720489?text=${message}`, "_blank");
                     setIsMobileMenuOpen(false);

@@ -9,7 +9,7 @@ export function CTASection() {
 
   const handleWhatsAppClick = () => {
     const message = encodeURIComponent(
-      "Olá, vim pelo site e gostaria de falar com um advogado. Pode me ajudar?"
+      "Olá, vim pelo site e gostaria de falar com o Dr. Sidnei Nardini. Pode me ajudar?"
     );
     window.open(`https://wa.me/5511999999999?text=${message}`, "_blank");
   };

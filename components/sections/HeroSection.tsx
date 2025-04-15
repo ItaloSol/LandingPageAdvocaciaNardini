@@ -13,7 +13,7 @@ export function HeroSection() {
 
   const handleWhatsAppClick = () => {
     const message = encodeURIComponent(
-      `Olá, meu nome é ${name} e gostaria de falar com um advogado. Pode me ajudar?`
+      `Olá, meu nome é ${name} e gostaria de falar com o Dr. Sidnei Nardini. Pode me ajudar?`
     );
     window.open(`https://wa.me/5517997720489?text=${message}`, '_blank');
   };

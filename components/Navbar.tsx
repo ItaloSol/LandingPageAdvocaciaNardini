@@ -37,15 +37,15 @@ export function Navbar() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <a href="#hero" className="relative">
-            <div className="flex items-center gap-2">
-             <div className="relative w-16 h-16"> {/* Ensure the size is correct */}
+            <div>
+             <div > {/* Increase the size */}
                 <Image
                   src="/images/logo-nav.png"
                   alt="Nardini Advogados"
-                  layout="responsive"  // Use responsive layout for better handling of size
-                  width={64}  // Set width to match w-16 (16 * 4 = 64)
-                  height={64} // Set height to match h-16 (16 * 4 = 64)
-                  objectFit="contain"  // Maintain aspect ratio
+                  layout="responsive"  
+                  width={96}  
+                  height={96} 
+                  objectFit="contain"  
                   priority
                 />
               </div>

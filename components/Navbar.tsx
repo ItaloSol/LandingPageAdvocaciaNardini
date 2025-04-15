@@ -40,7 +40,7 @@ export function Navbar() {
             <div>
              <div > {/* Increase the size */}
                 <Image
-                  src="/images/logo-nav.png"
+                  src="/images/logo-nav.webp"
                   alt="Nardini Advogados"
                   layout="responsive"  
                   width={96}  

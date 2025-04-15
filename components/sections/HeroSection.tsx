@@ -22,7 +22,7 @@ export function HeroSection() {
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0" ref={parallaxRef as React.RefObject<HTMLDivElement>}>
         <Image
-          src="/images/back.png"
+          src="/images/back.webp"
           alt="Estátua da Justiça"
           fill
           className="object-cover brightness-[0.3]"
@@ -32,7 +32,7 @@ export function HeroSection() {
       <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
         <div className="mb-8 w-full max-w-[200px] mx-auto relative h-[80px] md:h-[100px]">
           <Image
-            src="/images/logo-headr.png"
+            src="/images/logo-headr.webp"
             alt="Estátua da Justiça"
             fill
             className="object-contain"

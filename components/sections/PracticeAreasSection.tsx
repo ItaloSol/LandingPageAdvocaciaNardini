@@ -210,10 +210,17 @@ function PracticeArea({ title, description, items, hoverColor, accentColor, icon
   const { ref: areaRef, isVisible: areaIsVisible } = useScrollReveal();
 
   const toggleCard = (id: string) => {
-    setOpenCards((prev) => ({
-      ...prev,
-      [id]: !prev[id],
-    }));
+    setOpenCards((prev) => {
+      // Close all other cards when opening a new one
+      const newState = Object.keys(prev).reduce((acc, key) => {
+        acc[key] = false;
+        return acc;
+      }, {} as { [key: string]: boolean });
+      
+      // Toggle the clicked card
+      newState[id] = !prev[id];
+      return newState;
+    });
   };
 
   return (
@@ -233,7 +240,24 @@ function PracticeArea({ title, description, items, hoverColor, accentColor, icon
             <Collapsible
               key={item.title}
               open={openCards[item.title]}
-              onOpenChange={() => toggleCard(item.title)}
+              onOpenChange={(open) => {
+                if (open) {
+                  // Only open this card and close others
+                  setOpenCards(prev => ({
+                    ...Object.keys(prev).reduce((acc, key) => {
+                      acc[key] = false;
+                      return acc;
+                    }, {} as { [key: string]: boolean }),
+                    [item.title]: true
+                  }));
+                } else {
+                  // Just close this card
+                  setOpenCards(prev => ({
+                    ...prev,
+                    [item.title]: false
+                  }));
+                }
+              }}
             >
               <CollapsibleTrigger 
                 className={`flex items-center justify-between w-full text-left p-4 ${hoverColor} rounded-lg transition-colors animate-fade-in hover-scale`}

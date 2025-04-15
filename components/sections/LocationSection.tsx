@@ -72,6 +72,7 @@ export function LocationSection() {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
+                title="Mapa mostrando a localização do escritório Nardini Advogados em São José do Rio Preto"
               ></iframe>
             </div>
           </div>

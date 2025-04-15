@@ -42,10 +42,10 @@ export function Navbar() {
                 <Image
                   src="/images/logo-nav.webp"
                   alt="Nardini Advogados"
-                  layout="responsive"  
-                  width={96}  
-                  height={96} 
-                  objectFit="contain"  
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  style={{ width: 'auto', height: '100%' }}
                   priority
                 />
               </div>

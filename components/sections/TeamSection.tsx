@@ -12,9 +12,9 @@ const lawyers = [
     education: [
       "Graduado em Direito pela Universidade Noroeste Paulista - Unorp",
       "Especialização em Direito Civil e Processo Civil",
-      "Mais de 10 anos de experiência em advocacia"
+      "Mais de 18 anos de experiência em advocacia"
     ],
-    description: "Advogado especialista em Direito Civil, com vasta experiência em questões imobiliárias, familiares e empresariais. Comprometido com a excelência jurídica e a defesa dos interesses de seus clientes, atua de forma estratégica e personalizada em cada caso.",
+    description: "Advogado especialista em Direito Civil e Direito do Consumidor, com vasta experiência em questões Imobiliárias, Família e Sucessões e Empresariais. Contando com advogados auxiliares e parceiros nas áreas previdenciária e trabalhista. Comprometido com a excelência jurídica e a defesa dos interesses de seus clientes, atua de forma estratégica e personalizada em cada caso.",
     image: "/images/Sidnei.webp",
     specialties: [
       "Direito Civil",

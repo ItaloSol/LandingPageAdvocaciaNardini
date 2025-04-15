@@ -19,7 +19,7 @@ export function AboutSection() {
           </h2>
           <div className="prose prose-lg max-w-none mb-12 animate-fade-in animate-delay-100">
             <p className="text-gray-600 text-center mb-12">
-              Há mais de 10 anos, o nosso escritório localizado na cidade de São José do Rio Preto,
+              Há mais de 18 anos, o nosso escritório localizado na cidade de São José do Rio Preto,
               interior de São Paulo, vem sempre oferecendo aos nossos clientes as melhores soluções jurídicas.
             </p>
           </div>

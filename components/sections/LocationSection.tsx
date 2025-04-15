@@ -1,6 +1,6 @@
 "use client";
 
-import { MapPin } from 'lucide-react';
+import { MapPin, Instagram, Facebook, Globe } from 'lucide-react';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 
 export function LocationSection() {
@@ -26,7 +26,7 @@ export function LocationSection() {
                       Escritório em São José do Rio Preto
                     </h3>
                     <p className="text-gray-600">
-                      Rua Carmelino Gonçalves Condessa nº 166 - Sala 01
+                      Rua Carmelino Gonçalves Condessa nº 166
                       <br />
                       Jardim Alto Rio Preto
                       <br />
@@ -43,6 +43,23 @@ export function LocationSection() {
                     <br />
                     09:00 às 17:00
                   </p>
+                </div>
+                <div className="border-t pt-4 mt-4">
+                  <h4 className="font-semibold text-blue-900 mb-2">Redes Sociais</h4>
+                  <div className="flex flex-col gap-2">
+                    <a href="https://www.instagram.com/sidneinardini.adv" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-gray-600 hover:text-blue-600 transition-colors">
+                      <Instagram className="w-5 h-5" />
+                      @sidneinardini.adv
+                    </a>
+                    <a href="https://www.facebook.com/nardiniadvogados" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-gray-600 hover:text-blue-600 transition-colors">
+                      <Facebook className="w-5 h-5" />
+                      Nardini Advogados
+                    </a>
+                    <a href="https://www.nardiniadvogados.com.br" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-gray-600 hover:text-blue-600 transition-colors">
+                      <Globe className="w-5 h-5" />
+                      www.nardiniadvogados.com.br
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

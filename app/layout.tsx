@@ -7,7 +7,7 @@ import { Navbar } from "@/components/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://nardiniadvogados.com.br'),
+  metadataBase: new URL('https://nardiniadvogados.web.app/'),
   title: {
     default: "Nardini Advogados | Direito Civil, Empresarial e Condominial em São José do Rio Preto",
     template: "%s | Nardini Advogados"
@@ -36,13 +36,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "pt_BR",
-    url: "https://nardiniadvogados.com.br",
+    url: "https://nardiniadvogados.web.app/",
     siteName: "Nardini Advogados",
     title: "Nardini Advogados | Direito Civil, Empresarial e Condominial",
     description: "Há mais de 10 anos oferecendo soluções jurídicas em São José do Rio Preto. Especialistas em direito civil, empresarial e condominial.",
     images: [
       {
-        url: "https://nardiniadvogados.com.br/og-image.jpg",
+        url: "https://nardiniadvogados.web.app/og-image.png",
         width: 1200,
         height: 630,
         alt: "Nardini Advogados - Escritório de Advocacia em São José do Rio Preto"
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Nardini Advogados | Advocacia Especializada",
     description: "Soluções jurídicas personalizadas em São José do Rio Preto. Direito civil, empresarial e condominial.",
-    images: ["https://nardiniadvogados.com.br/twitter-image.jpg"],
+    images: ["https://nardiniadvogados.web.app/og-image.png"],
   },
   robots: {
     index: true,
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     google: "your-google-verification-code",
   },
   alternates: {
-    canonical: "https://nardiniadvogados.com.br",
+    canonical: "https://nardiniadvogados.web.app/",
   },
   icons: {
     icon: "/logo.ico",
@@ -85,7 +85,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className="scroll-smooth">
       <head>
-        <link rel="canonical" href="https://nardiniadvogados.com.br" />
+        <link rel="canonical" href="https://nardiniadvogados.web.app/" />
         <meta name="geo.region" content="BR-SP" />
         <meta name="geo.placename" content="São José do Rio Preto" />
         <meta name="geo.position" content="-20.8167252;-49.4015975" />

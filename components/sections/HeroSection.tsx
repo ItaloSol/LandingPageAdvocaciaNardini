@@ -19,10 +19,10 @@ export function HeroSection() {
   };
 
   return (
-    <section className="relative h-[80vh] md:h-[90vh] flex items-center justify-center overflow-hidden">
+    <section className="relative h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0" ref={parallaxRef as React.RefObject<HTMLDivElement>}>
         <Image
-          src="/images/logo.png"
+          src="/images/back.png"
           alt="Estátua da Justiça"
           fill
           className="object-cover brightness-[0.3]"
@@ -30,6 +30,15 @@ export function HeroSection() {
         />
       </div>
       <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
+        <div className="mb-8 w-full max-w-[200px] mx-auto relative h-[80px] md:h-[100px]">
+          <Image
+            src="/images/logo-headr.png"
+            alt="Estátua da Justiça"
+            fill
+            className="object-contain"
+            priority
+          />
+        </div>
         <h1 className="text-4xl md:text-7xl font-bold mb-6 text-white animate-fade-in">
           Excelência Jurídica ao Seu Alcance
         </h1>
@@ -38,7 +47,7 @@ export function HeroSection() {
           animate-fade-in animate-delay-100
         >
           Soluções jurídicas personalizadas para proteger seus direitos e
-          interesses em questões cíveis, empresariais e condominiais.
+          interesses em questões cíveis, empresariais, imobiliário e condominiais.
         </p>
         <Card className="bg-white/10 backdrop-blur-md border-white/20 p-6 animate-fade-in" style={{ animationDelay: '0.2s' }}>
           <div className="flex items-center justify-center gap-2 mb-4">

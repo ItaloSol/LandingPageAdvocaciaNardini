@@ -35,6 +35,16 @@ const problems = [
       "Reformas e obras irregulares",
       "Assembleias e convenções"
     ]
+  },
+  {
+    title: "Direito Imobiliário",
+    items: [
+      "Compra e venda de imóveis",
+      "Contratos de locação",
+      "Usucapião e regularização",
+      "Financiamentos imobiliários",
+      "Due diligence imobiliário"
+    ]
   }
 ];
 
@@ -60,7 +70,7 @@ export function ProblemsSection() {
         <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: "0.1s" }}>
           Identificamos e solucionamos as principais questões jurídicas que nossos clientes enfrentam
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto mb-12">
           {problems.map((problem, index) => (
             <Card 
               key={index} 

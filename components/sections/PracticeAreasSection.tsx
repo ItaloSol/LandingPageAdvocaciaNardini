@@ -101,32 +101,33 @@ const civilLawItems = [
 const businessLawItems = [
   {
     title: "Constituição de Empresas",
-    description: "Assessoria completa na abertura de empresas, incluindo escolha do tipo societário e registro.",
+    description: "Assessoria completa na abertura de empresas, incluindo escolha do tipo societário e registro, com adequação à LGPD.",
     icon: <Building className="h-5 w-5 text-yellow-600" />,
     details: [
       "Análise do melhor tipo societário",
       "Elaboração de contratos sociais",
       "Registro na Junta Comercial",
       "Obtenção de licenças",
-      "Planejamento tributário inicial"
+      "Planejamento tributário inicial",
+      "Adequação para LGPD"
     ]
   },
   {
-    title: "Contratos Comerciais",
-    description: "Elaboração e análise de contratos empresariais, protegendo os interesses do seu negócio.",
-    icon: <ScrollText className="h-5 w-5 text-yellow-600" />,
+    title: "Falências",
+    description: "Assessoria jurídica em processos de falência e recuperação de ativos.",
+    icon: <HeartPulse className="h-5 w-5 text-yellow-600" />,
     details: [
-      "Contratos de fornecimento",
-      "Acordos de parceria",
-      "Contratos de prestação de serviços",
-      "Termos de confidencialidade",
-      "Contratos internacionais"
+      "Processos de falência",
+      "Recuperação de ativos",
+      "Defesa de credores",
+      "Liquidação de bens",
+      "Concordatas"
     ]
   },
   {
     title: "Recuperação Judicial",
     description: "Suporte especializado em processos de recuperação judicial e reestruturação empresarial.",
-    icon: <HeartPulse className="h-5 w-5 text-yellow-600" />,
+    icon: <Scale className="h-5 w-5 text-yellow-600" />,
     details: [
       "Análise de viabilidade",
       "Elaboração do plano de recuperação",
@@ -134,22 +135,26 @@ const businessLawItems = [
       "Assembleia de credores",
       "Acompanhamento do processo"
     ]
-  },
-  {
-    title: "Fusões e Aquisições",
-    description: "Assessoria em operações societárias, due diligence e negociações empresariais.",
-    icon: <Merge className="h-5 w-5 text-yellow-600" />,
-    details: [
-      "Due diligence legal",
-      "Avaliação de riscos",
-      "Estruturação da operação",
-      "Contratos de compra e venda",
-      "Acordos de acionistas"
-    ]
-  },
+  }
 ];
 
-const condoLawItems = [
+const realEstateAndCondoLawItems = [
+  {
+    title: "Direito Imobiliário",
+    description: "Assessoria completa em compra, venda e locação de imóveis.",
+    icon: <Home className="h-5 w-5 text-blue-600" />,
+    details: [
+      "Contratos de compra e venda",
+      "Locação residencial e comercial",
+      "Usucapião e regularização",
+      "Financiamentos imobiliários",
+      "Due diligence imobiliário",
+      "Acompanhamento de Compra e Venda ou Locação",
+      "Due Diligence em contratos de venda e compra",
+      "Ações de Despejo e Cobrança de Alugueis",
+      "Ações Possessórias (Imissão/Reintegração/Usucapião)"
+    ]
+  },
   {
     title: "Assembleias e Convenções",
     description: "Orientação na realização de assembleias e elaboração de convenções condominiais.",
@@ -308,9 +313,9 @@ export function PracticeAreasSection() {
               animationDelay={0.2}
             />
             <PracticeArea
-              title="Direito Condominial"
-              description="Assessoria completa para condomínios, síndicos e condôminos."
-              items={condoLawItems}
+              title="Direito Imobiliário e Condominial"
+              description="Assessoria completa em questões imobiliárias e condominiais, desde compra/venda até gestão de condomínios."
+              items={realEstateAndCondoLawItems}
               hoverColor="hover:bg-blue-50"
               accentColor="to-blue-50"
               icon={<Home size={32} />}

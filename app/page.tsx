@@ -16,10 +16,7 @@ export default function Home() {
       <section id="hero">
       <HeroSection />
       </section>
-      <section id="sobre">
-        <AboutSection />
-        <TeamSection />
-      </section>
+      
       <section id="areas">
         <PracticeAreasSection />
       </section>
@@ -27,6 +24,10 @@ export default function Home() {
         <ProblemsSection />
       </section>
       <BenefitsSection />
+      <section id="sobre">
+        <AboutSection />
+        <TeamSection />
+      </section>
       <section id="depoimentos">
         <TestimonialsSection />
       </section>

@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     description: "Há mais de 10 anos oferecendo soluções jurídicas em São José do Rio Preto. Especialistas em direito civil, empresarial e condominial.",
     images: [
       {
-        url: "https://nardiniadvogados.web.app/og-image.png",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Nardini Advogados - Escritório de Advocacia em São José do Rio Preto"
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Nardini Advogados | Advocacia Especializada",
     description: "Soluções jurídicas personalizadas em São José do Rio Preto. Direito civil, empresarial e condominial.",
-    images: ["https://nardiniadvogados.web.app/og-image.png"],
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,

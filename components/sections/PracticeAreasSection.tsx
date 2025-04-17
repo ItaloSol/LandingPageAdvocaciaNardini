@@ -41,7 +41,7 @@ interface PracticeAreaProps {
   title: string;
   description: string;
   items: PracticeItem[];
-  hoverColor: "hover:bg-blue-50" | "hover:bg-yellow-50";
+  hoverColor: "hover:bg-gold/10" | "hover:bg-green/10";
   accentColor: string;
   icon: React.ReactNode;
   animationDelay?: number;
@@ -51,7 +51,7 @@ const civilLawItems = [
   {
     title: "Contratos e Negociações",
     description: "Elaboração, análise e revisão de contratos civis, com foco na proteção dos seus interesses.",
-    icon: <FileText className="h-5 w-5 text-blue-600" />,
+    icon: <FileText className="h-5 w-5 text-gold" />,
     details: [
       "Elaboração de contratos personalizados",
       "Análise e revisão de cláusulas contratuais",
@@ -63,7 +63,7 @@ const civilLawItems = [
   {
     title: "Responsabilidade Civil",
     description: "Defesa em casos de danos morais, materiais e ações indenizatórias.",
-    icon: <ShieldAlert className="h-5 w-5 text-blue-600" />,
+    icon: <ShieldAlert className="h-5 w-5 text-gold" />,
     details: [
       "Ações de indenização por danos morais",
       "Reparação de danos materiais",
@@ -75,7 +75,7 @@ const civilLawItems = [
   {
     title: "Direito das Obrigações",
     description: "Assessoria em questões envolvendo obrigações contratuais e extracontratuais.",
-    icon: <Handshake className="h-5 w-5 text-blue-600" />,
+    icon: <Handshake className="h-5 w-5 text-gold" />,
     details: [
       "Cumprimento de obrigações",
       "Inadimplemento contratual",
@@ -87,7 +87,7 @@ const civilLawItems = [
   {
     title: "Direito de Família",
     description: "Suporte em divórcios, pensões, guarda e demais questões familiares.",
-    icon: <Users className="h-5 w-5 text-blue-600" />,
+    icon: <Users className="h-5 w-5 text-gold" />,
     details: [
       "Processos de divórcio",
       "Pensão alimentícia",
@@ -102,7 +102,7 @@ const businessLawItems = [
   {
     title: "Constituição de Empresas",
     description: "Assessoria completa na abertura de empresas, incluindo escolha do tipo societário e registro, com adequação à LGPD.",
-    icon: <Building className="h-5 w-5 text-yellow-600" />,
+    icon: <Building className="h-5 w-5 text-gold" />,
     details: [
       "Análise do melhor tipo societário",
       "Elaboração de contratos sociais",
@@ -115,7 +115,7 @@ const businessLawItems = [
   {
     title: "Falências",
     description: "Assessoria jurídica em processos de falência e recuperação de ativos.",
-    icon: <HeartPulse className="h-5 w-5 text-yellow-600" />,
+    icon: <HeartPulse className="h-5 w-5 text-gold" />,
     details: [
       "Processos de falência",
       "Recuperação de ativos",
@@ -127,7 +127,7 @@ const businessLawItems = [
   {
     title: "Recuperação Judicial",
     description: "Suporte especializado em processos de recuperação judicial e reestruturação empresarial.",
-    icon: <Scale className="h-5 w-5 text-yellow-600" />,
+    icon: <Scale className="h-5 w-5 text-gold" />,
     details: [
       "Análise de viabilidade",
       "Elaboração do plano de recuperação",
@@ -142,7 +142,7 @@ const realEstateAndCondoLawItems = [
   {
     title: "Direito Imobiliário",
     description: "Assessoria completa em compra, venda e locação de imóveis.",
-    icon: <Home className="h-5 w-5 text-blue-600" />,
+    icon: <Home className="h-5 w-5 text-gold" />,
     details: [
       "Contratos de compra e venda",
       "Locação residencial e comercial",
@@ -158,7 +158,7 @@ const realEstateAndCondoLawItems = [
   {
     title: "Assembleias e Convenções",
     description: "Orientação na realização de assembleias e elaboração de convenções condominiais.",
-    icon: <Users2 className="h-5 w-5 text-blue-600" />,
+    icon: <Users2 className="h-5 w-5 text-gold" />,
     details: [
       "Organização de assembleias",
       "Elaboração de convenções",
@@ -170,7 +170,7 @@ const realEstateAndCondoLawItems = [
   {
     title: "Cobranças Condominiais",
     description: "Gestão e recuperação de taxas condominiais em atraso.",
-    icon: <Receipt className="h-5 w-5 text-blue-600" />,
+    icon: <Receipt className="h-5 w-5 text-gold" />,
     details: [
       "Cobrança extrajudicial",
       "Ações de cobrança",
@@ -182,7 +182,7 @@ const realEstateAndCondoLawItems = [
   {
     title: "Mediação de Conflitos",
     description: "Resolução de conflitos entre condôminos e administração.",
-    icon: <MessageSquare className="h-5 w-5 text-blue-600" />,
+    icon: <MessageSquare className="h-5 w-5 text-gold" />,
     details: [
       "Mediação entre vizinhos",
       "Resolução de disputas",
@@ -194,7 +194,7 @@ const realEstateAndCondoLawItems = [
   {
     title: "Reformas e Obras",
     description: "Assessoria jurídica em projetos de reforma e obras em condomínios.",
-    icon: <Hammer className="h-5 w-5 text-blue-600" />,
+    icon: <Hammer className="h-5 w-5 text-gold" />,
     details: [
       "Análise de projetos",
       "Contratos com fornecedores",
@@ -231,8 +231,8 @@ function PracticeArea({ title, description, items, hoverColor, accentColor, icon
     >
       <Card className={`h-full p-4 md:p-8 bg-gradient-to-br from-white ${accentColor} animate-fade-in`}>
         <div className="flex items-center gap-3 mb-4">
-          <div className="text-blue-600">{icon}</div>
-          <h3 className="text-2xl md:text-3xl font-bold text-blue-900">{title}</h3>
+          <div className="text-gold">{icon}</div>
+          <h3 className="text-2xl md:text-3xl font-bold text-green">{title}</h3>
         </div>
         <p className="text-gray-600 mb-8 text-lg">{description}</p>
         <ul className="space-y-4">
@@ -283,7 +283,7 @@ function PracticeArea({ title, description, items, hoverColor, accentColor, icon
                       className="flex items-center text-gray-600 animate-fade-in"
                       style={{ animationDelay: `${index * 0.05}s` }}
                     >
-                      <span className="w-2 h-2 bg-blue-600 rounded-full mr-2"></span>
+                      <span className="w-2 h-2 bg-gold rounded-full mr-2"></span>
                       {detail}
                     </li>
                   ))}
@@ -314,7 +314,7 @@ export function PracticeAreasSection() {
         className={`container mx-auto px-4 scroll-reveal ${sectionIsVisible ? 'visible' : ''}`}
       >
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-900 mb-12 animate-fade-in">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-green mb-12 animate-fade-in">
             Áreas de Atuação
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
@@ -322,8 +322,8 @@ export function PracticeAreasSection() {
               title="Direito Civil"
               description="Especialização em contratos, responsabilidade civil, direito das obrigações e família."
               items={civilLawItems}
-              hoverColor="hover:bg-blue-50"
-              accentColor="to-blue-50"
+              hoverColor="hover:bg-gold/10"
+              accentColor="to-gold/10"
               icon={<Scale size={32} />}
               animationDelay={0.1}
             />
@@ -331,8 +331,8 @@ export function PracticeAreasSection() {
               title="Direito Empresarial"
               description="Suporte jurídico completo para empresas, desde a constituição até operações complexas."
               items={businessLawItems}
-              hoverColor="hover:bg-yellow-50"
-              accentColor="to-yellow-50"
+              hoverColor="hover:bg-green/10"
+              accentColor="to-green/10"
               icon={<Building2 size={32} />}
               animationDelay={0.2}
             />
@@ -340,8 +340,8 @@ export function PracticeAreasSection() {
               title="Direito Imobiliário e Condominial"
               description="Assessoria completa em questões imobiliárias e condominiais, desde compra/venda até gestão de condomínios."
               items={realEstateAndCondoLawItems}
-              hoverColor="hover:bg-blue-50"
-              accentColor="to-blue-50"
+              hoverColor="hover:bg-gold/10"
+              accentColor="to-gold/10"
               icon={<Home size={32} />}
               animationDelay={0.3}
             />
@@ -350,7 +350,7 @@ export function PracticeAreasSection() {
             <Button
               onClick={handleWhatsAppClick}
               size="lg"
-              className="bg-blue-600 hover:bg-blue-700 text-white hover-scale"
+              className="bg-gold hover:bg-gold/90 text-white hover-scale"
             >
               <MessageCircle className="mr-2" />
               Consulte um Advogado

@@ -41,7 +41,7 @@ export function TeamSection() {
         className={`container mx-auto px-4 scroll-reveal ${sectionIsVisible ? 'visible' : ''}`}
       >
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-900 mb-4 animate-fade-in">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-green mb-4 animate-fade-in">
             O Advogado Especialista
           </h2>
           <p className="text-gray-600 text-center mb-12 animate-fade-in" style={{ animationDelay: "0.1s" }}>
@@ -81,20 +81,20 @@ export function TeamSection() {
                     <div className="hidden md:block mb-6">
                       <div className="flex items-center gap-2 mb-2">
                         {lawyer.icon}
-                        <span className="text-sm font-medium text-blue-600">OAB/SP {lawyer.oab}</span>
+                        <span className="text-sm font-medium text-gold">OAB/SP {lawyer.oab}</span>
                       </div>
-                      <h3 className="text-3xl font-bold text-blue-900">{lawyer.name}</h3>
+                      <h3 className="text-3xl font-bold text-green">{lawyer.name}</h3>
                     </div>
 
                     <div className="mb-6">
                       <div className="flex items-center gap-2 mb-3">
-                        <GraduationCap className="h-5 w-5 text-blue-600" />
-                        <h4 className="text-lg font-semibold text-blue-900">Formação Acadêmica</h4>
+                        <GraduationCap className="h-5 w-5 text-gold" />
+                        <h4 className="text-lg font-semibold text-green">Formação Acadêmica</h4>
                       </div>
                       <ul className="space-y-2 text-gray-700">
                         {lawyer.education.map((edu, i) => (
                           <li key={i} className="flex items-center gap-2">
-                            <span className="w-2 h-2 bg-blue-600 rounded-full"></span>
+                            <span className="w-2 h-2 bg-gold rounded-full"></span>
                             {edu}
                           </li>
                         ))}
@@ -103,22 +103,22 @@ export function TeamSection() {
 
                     <div className="mb-6">
                       <div className="flex items-center gap-2 mb-3">
-                        <BookOpen className="h-5 w-5 text-blue-600" />
-                        <h4 className="text-lg font-semibold text-blue-900">Sobre</h4>
+                        <BookOpen className="h-5 w-5 text-gold" />
+                        <h4 className="text-lg font-semibold text-green">Sobre</h4>
                       </div>
                       <p className="text-gray-700 leading-relaxed">{lawyer.description}</p>
                     </div>
 
                     <div className="mb-6">
                       <div className="flex items-center gap-2 mb-3">
-                        <Scale className="h-5 w-5 text-blue-600" />
-                        <h4 className="text-lg font-semibold text-blue-900">Áreas de Atuação</h4>
+                        <Scale className="h-5 w-5 text-gold" />
+                        <h4 className="text-lg font-semibold text-green">Áreas de Atuação</h4>
                       </div>
                       <div className="flex flex-wrap gap-2">
                         {lawyer.specialties.map((specialty, specIndex) => (
                           <span
                             key={specIndex}
-                            className="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full"
+                            className="bg-gold/10 text-gold text-sm font-medium px-3 py-1 rounded-full"
                           >
                             {specialty}
                           </span>
@@ -128,13 +128,13 @@ export function TeamSection() {
 
                     <div>
                       <div className="flex items-center gap-2 mb-3">
-                        <Award className="h-5 w-5 text-blue-600" />
-                        <h4 className="text-lg font-semibold text-blue-900">Conquistas</h4>
+                        <Award className="h-5 w-5 text-gold" />
+                        <h4 className="text-lg font-semibold text-green">Conquistas</h4>
                       </div>
                       <ul className="space-y-2 text-gray-700">
                         {lawyer.achievements.map((achievement, i) => (
                           <li key={i} className="flex items-center gap-2">
-                            <span className="w-2 h-2 bg-blue-600 rounded-full"></span>
+                            <span className="w-2 h-2 bg-gold rounded-full"></span>
                             {achievement}
                           </li>
                         ))}

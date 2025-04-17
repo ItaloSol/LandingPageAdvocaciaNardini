@@ -7,7 +7,7 @@ export function Footer() {
   const { ref: footerRef, isVisible: footerIsVisible } = useScrollReveal();
 
   return (
-    <footer className="bg-blue-900 text-white py-12">
+    <footer className="bg-green text-white py-12">
       <div 
         ref={footerRef as React.RefObject<HTMLDivElement>}
         className={`container mx-auto px-4 scroll-reveal ${footerIsVisible ? 'visible' : ''}`}
@@ -24,14 +24,14 @@ export function Footer() {
             <div className="space-y-2">
               <a
                 href="tel:+5517997720489"
-                className="flex items-center hover:text-yellow-400 transition-colors duration-200"
+                className="flex items-center hover:text-gold transition-colors duration-200"
               >
                 <Phone className="mr-2" size={20} />
                 (17) 99772-0489
               </a>
               <a
                 href="mailto:sidnei@nardiniadvogados.com.br"
-                className="flex items-center hover:text-yellow-400 transition-colors duration-200"
+                className="flex items-center hover:text-gold transition-colors duration-200"
               >
                 <MessageCircle className="mr-2" size={20} />
                 sidnei@nardiniadvogados.com.br
@@ -52,10 +52,17 @@ export function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-8 pt-8 border-t border-blue-800 text-center animate-fade-in" style={{ animationDelay: "0.3s" }}>
-          <p className="text-gray-400">
-            © {new Date().getFullYear()} Sidnei Nardini Advogado. Todos os direitos
-            reservados.
+        <div className="mt-8 pt-8 border-t border-green-800 text-center animate-fade-in" style={{ animationDelay: "0.3s" }}>
+        <p className="text-gray-600">
+            © {new Date().getFullYear()} Sidnei Nardini Advogado. Todos os direitos reservados. Site criado por{' '}
+            <a 
+              href="https://www.instagram.com/landingpagecraft/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-primary hover:text-primary-dark transition-colors"
+            >
+              landingpagecraft
+            </a>
           </p>
         </div>
       </div>

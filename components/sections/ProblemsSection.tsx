@@ -64,7 +64,7 @@ export function ProblemsSection() {
         ref={sectionRef as React.RefObject<HTMLDivElement>}
         className={`container mx-auto px-4 scroll-reveal ${sectionIsVisible ? 'visible' : ''}`}
       >
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-blue-900 animate-fade-in">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-green animate-fade-in">
           Problemas que Resolvemos
         </h2>
         <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: "0.1s" }}>
@@ -78,16 +78,16 @@ export function ProblemsSection() {
               style={{ animationDelay: `${(index + 2) * 0.1}s` }}
             >
               <div className="flex items-start gap-4">
-                <AlertCircle className="text-blue-600 h-6 w-6 mt-1 flex-shrink-0" />
+                <AlertCircle className="text-gold h-6 w-6 mt-1 flex-shrink-0" />
                 <div>
-                  <h3 className="text-xl font-semibold mb-4 text-blue-900">{problem.title}</h3>
+                  <h3 className="text-xl font-semibold mb-4 text-green">{problem.title}</h3>
                   <ul className="space-y-2">
                     {problem.items.map((item, itemIndex) => (
                       <li 
                         key={itemIndex} 
                         className="flex items-center text-gray-600"
                       >
-                        <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2 flex-shrink-0"></span>
+                        <span className="w-1.5 h-1.5 bg-gold rounded-full mr-2 flex-shrink-0"></span>
                         {item}
                       </li>
                     ))}
@@ -101,7 +101,7 @@ export function ProblemsSection() {
           <Button
             onClick={handleWhatsAppClick}
             size="lg"
-            className="bg-blue-600 hover:bg-blue-700 text-white hover-scale"
+            className="bg-gold hover:bg-gold/90 text-white hover-scale"
           >
             <MessageCircle className="mr-2" />
             Resolver Meu Problema Agora

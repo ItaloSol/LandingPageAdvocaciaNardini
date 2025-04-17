@@ -30,15 +30,15 @@ export function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white shadow-md py-2" : "bg-transparent py-4 opacity-0"
+        isScrolled ? "bg-white shadow-md py-2" : "bg-transparent py-4"
       }`}
     >
-      <div className="container mx-auto">
+      <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <a href="#hero" className="relative">
             <div>
-             <div > {/* Increase the size */}
+             <div>
                 <Image
                   src="/images/logo-nav.webp"
                   alt="Nardini Advogados"
@@ -58,8 +58,8 @@ export function Navbar() {
               <a
                 key={item.href}
                 href={item.href}
-                className={`text-sm font-medium transition-colors hover:text-blue-600 ${
-                  isScrolled ? "text-gray-600" : "text-white"
+                className={`text-sm font-medium transition-colors hover:text-gold ${
+                  isScrolled ? "text-green" : "text-white"
                 }`}
               >
                 {item.label}
@@ -75,8 +75,8 @@ export function Navbar() {
               size="sm"
               className={`${
                 isScrolled
-                  ? "bg-blue-600 hover:bg-blue-700 text-white"
-                  : "bg-white text-blue-900 hover:bg-blue-50"
+                  ? "bg-gold hover:bg-gold/90 text-white"
+                  : "bg-white text-green hover:bg-gold/10"
               }`}
             >
               Fale com um Advogado
@@ -90,9 +90,9 @@ export function Navbar() {
             aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? (
-              <X className={isScrolled ? "text-blue-900" : "text-white"} />
+              <X className={isScrolled ? "text-green" : "text-white"} />
             ) : (
-              <Menu className={isScrolled ? "text-blue-900" : "text-white"} />
+              <Menu className={isScrolled ? "text-green" : "text-white"} />
             )}
           </button>
 
@@ -104,7 +104,7 @@ export function Navbar() {
                   <a
                     key={item.href}
                     href={item.href}
-                    className="text-lg font-medium text-blue-900 hover:text-blue-600"
+                    className="text-lg font-medium text-green hover:text-gold"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {item.label}
@@ -118,7 +118,7 @@ export function Navbar() {
                     window.open(`https://wa.me/5517997720489?text=${message}`, "_blank");
                     setIsMobileMenuOpen(false);
                   }}
-                  className="bg-blue-600 hover:bg-blue-700 text-white"
+                  className="bg-gold hover:bg-gold/90 text-white"
                 >
                   Fale com um Advogado
                 </Button>

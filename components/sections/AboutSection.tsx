@@ -14,7 +14,7 @@ export function AboutSection() {
         className={`container mx-auto px-4 scroll-reveal ${sectionIsVisible ? 'visible' : ''}`}
       >
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-900 mb-8 animate-fade-in">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-green mb-8 animate-fade-in">
             Sobre Nós
           </h2>
           <div className="prose prose-lg max-w-none mb-12 animate-fade-in animate-delay-100">
@@ -27,9 +27,9 @@ export function AboutSection() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <Card className="p-6 animate-fade-in hover-scale" style={{ animationDelay: "0.2s" }}>
               <div className="flex flex-col items-center text-center">
-                <Target className="h-12 w-12 text-blue-600 mb-4" />
+                <Target className="h-12 w-12 text-gold mb-4" />
                 <div>
-                  <h3 className="text-xl font-semibold mb-3 text-blue-900">Missão</h3>
+                  <h3 className="text-xl font-semibold mb-3 text-green">Missão</h3>
                   <p className="text-gray-600">
                     Oferecer aos nossos clientes soluções jurídicas personalizadas, eficientes e criativas,
                     com foco na incansável busca pela rápida resolução dos conflitos, provendo aos clientes
@@ -41,9 +41,9 @@ export function AboutSection() {
 
             <Card className="p-6 animate-fade-in hover-scale" style={{ animationDelay: "0.3s" }}>
               <div className="flex flex-col items-center text-center">
-                <Compass className="h-12 w-12 text-blue-600 mb-4" />
+                <Compass className="h-12 w-12 text-gold mb-4" />
                 <div>
-                  <h3 className="text-xl font-semibold mb-3 text-blue-900">Visão</h3>
+                  <h3 className="text-xl font-semibold mb-3 text-green">Visão</h3>
                   <p className="text-gray-600">
                     Ser referência em demandas jurídicas no mercado de atuação, mantendo a prestação
                     de serviços eficientes, com alto padrão de qualidade e com foco nos clientes,
@@ -55,9 +55,9 @@ export function AboutSection() {
 
             <Card className="p-6 animate-fade-in hover-scale" style={{ animationDelay: "0.4s" }}>
               <div className="flex flex-col items-center text-center">
-                <Heart className="h-12 w-12 text-blue-600 mb-4" />
+                <Heart className="h-12 w-12 text-gold mb-4" />
                 <div>
-                  <h3 className="text-xl font-semibold mb-3 text-blue-900">Valores</h3>
+                  <h3 className="text-xl font-semibold mb-3 text-green">Valores</h3>
                   <p className="text-gray-600">
                     Ética profissional, confiabilidade; qualidade nos serviços; agilidade; alcance
                     de resultados positivos; transparência; atendimento personalizado; permanente

@@ -33,16 +33,16 @@ export function TestimonialsSection() {
         className={`container mx-auto px-4 scroll-reveal ${sectionIsVisible ? 'visible' : ''}`}
       >
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4 animate-fade-in">
+          <h2 className="text-3xl md:text-4xl font-bold text-green mb-4 animate-fade-in">
             O Que Nossos Clientes Dizem
           </h2>
           <div className="flex items-center justify-center gap-2 mb-4 animate-fade-in" style={{ animationDelay: "0.1s" }}>
             <div className="flex">
               {[...Array(5)].map((_, i) => (
-                <Star key={i} className="h-6 w-6 text-yellow-400 fill-current" />
+                <Star key={i} className="h-6 w-6 text-gold fill-current" />
               ))}
             </div>
-            <span className="text-xl font-semibold text-blue-900">5.0</span>
+            <span className="text-xl font-semibold text-green">5.0</span>
           </div>
           <p className="text-gray-600 max-w-2xl mx-auto mb-6 animate-fade-in" style={{ animationDelay: "0.2s" }}>
             Avaliações verificadas do Google
@@ -53,17 +53,17 @@ export function TestimonialsSection() {
           {testimonials.map((testimonial, index) => (
             <Card 
               key={index} 
-              className="p-6 hover-scale animate-fade-in"
+              className={`p-6 hover-scale animate-fade-in`}
               style={{ animationDelay: `${(index + 3) * 0.1}s` }}
             >
               <div className="flex mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
+                  <Star key={i} className="h-5 w-5 text-gold fill-current" />
                 ))}
               </div>
               <p className="text-gray-600 mb-4 italic">&ldquo;{testimonial.content}&rdquo;</p>
               <div className="border-t pt-4">
-                <p className="font-semibold text-blue-900">{testimonial.name}</p>
+                <p className="font-semibold text-green">{testimonial.name}</p>
                 <p className="text-sm text-gray-500">Cliente Google</p>
               </div>
             </Card>
@@ -74,7 +74,7 @@ export function TestimonialsSection() {
           <Button
             onClick={() => window.open("https://www.google.com/maps/place/Nardini+Advogados/@-20.8167202,-49.4041724,17z/data=!4m18!1m9!3m8!1s0x94bdad798f0a94fd:0xdfb9fbbf682ce8e0!2sNardini+Advogados!8m2!3d-20.8167252!4d-49.4015975!9m1!1b1!16s%2Fg%2F11bc7srzsy!3m7!1s0x94bdad798f0a94fd:0xdfb9fbbf682ce8e0!8m2!3d-20.8167252!4d-49.4015975!9m1!1b1!16s%2Fg%2F11bc7srzsy?entry=ttu&g_ep=EgoyMDI1MDQwOS4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D", "_blank")}
             variant="outline"
-            className="bg-white hover:bg-gray-50 hover-scale"
+            className="bg-white hover:bg-gray-50 text-green border-gold hover-scale"
           >
             <ExternalLink className="mr-2 h-4 w-4" />
             Ver Todas as Avaliações no Google

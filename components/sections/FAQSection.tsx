@@ -36,7 +36,7 @@ export function FAQSection() {
         ref={sectionRef as React.RefObject<HTMLDivElement>}
         className={`container mx-auto px-4 scroll-reveal ${sectionIsVisible ? 'visible' : ''}`}
       >
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-blue-900 animate-fade-in">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-green animate-fade-in">
           Perguntas Frequentes
         </h2>
         <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: "0.1s" }}>
@@ -51,7 +51,7 @@ export function FAQSection() {
                 className="animate-fade-in"
                 style={{ animationDelay: `${(index + 2) * 0.1}s` }}
               >
-                <AccordionTrigger className="text-left text-blue-900 hover:text-blue-700">
+                <AccordionTrigger className="text-left text-green hover:text-gold">
                   {faq.question}
                 </AccordionTrigger>
                 <AccordionContent className="text-gray-600">

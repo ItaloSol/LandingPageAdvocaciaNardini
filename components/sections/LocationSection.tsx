@@ -13,16 +13,16 @@ export function LocationSection() {
         className={`container mx-auto px-4 scroll-reveal ${sectionIsVisible ? 'visible' : ''}`}
       >
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-900 mb-4 animate-fade-in">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-green mb-4 animate-fade-in">
             Onde Estamos
           </h2>
           <div className="flex flex-col md:flex-row gap-8 items-start">
             <div className="w-full md:w-1/3 animate-fade-in" style={{ animationDelay: "0.1s" }}>
               <div className="bg-white p-6 rounded-lg shadow-lg">
                 <div className="flex items-start gap-3 mb-4">
-                  <MapPin className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
+                  <MapPin className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
                   <div>
-                    <h3 className="text-xl font-semibold text-blue-900 mb-2">
+                    <h3 className="text-xl font-semibold text-green mb-2">
                       Escritório em São José do Rio Preto
                     </h3>
                     <p className="text-gray-600">
@@ -37,7 +37,7 @@ export function LocationSection() {
                   </div>
                 </div>
                 <div className="border-t pt-4 mt-4">
-                  <h4 className="font-semibold text-blue-900 mb-2">Horário de Atendimento</h4>
+                  <h4 className="font-semibold text-green mb-2">Horário de Atendimento</h4>
                   <p className="text-gray-600">
                     Segunda a Sexta
                     <br />
@@ -45,17 +45,17 @@ export function LocationSection() {
                   </p>
                 </div>
                 <div className="border-t pt-4 mt-4">
-                  <h4 className="font-semibold text-blue-900 mb-2">Redes Sociais</h4>
+                  <h4 className="font-semibold text-green mb-2">Redes Sociais</h4>
                   <div className="flex flex-col gap-2">
-                    <a href="https://www.instagram.com/sidneinardini.adv" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-gray-600 hover:text-blue-600 transition-colors">
+                    <a href="https://www.instagram.com/sidneinardini.adv" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-gray-600 hover:text-gold transition-colors">
                       <Instagram className="w-5 h-5" />
                       @sidneinardini.adv
                     </a>
-                    <a href="https://www.facebook.com/nardiniadvogados" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-gray-600 hover:text-blue-600 transition-colors">
+                    <a href="https://www.facebook.com/nardiniadvogados" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-gray-600 hover:text-gold transition-colors">
                       <Facebook className="w-5 h-5" />
                       Nardini Advogados
                     </a>
-                    <a href="https://www.nardiniadvogados.com.br" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-gray-600 hover:text-blue-600 transition-colors">
+                    <a href="https://www.nardiniadvogados.com.br" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-gray-600 hover:text-gold transition-colors">
                       <Globe className="w-5 h-5" />
                       www.nardiniadvogados.com.br
                     </a>

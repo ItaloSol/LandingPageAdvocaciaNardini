@@ -44,15 +44,15 @@ export function HeroSection() {
         </h1>
         <p
           className="text-lg md:text-2xl mb-8 text-gray-200 px-4 animate-fade-in"
-          animate-fade-in animate-delay-100
+          style={{ animationDelay: '0.1s' }}
         >
           Soluções jurídicas personalizadas para proteger seus direitos e
           interesses em questões cíveis, empresariais, imobiliário e condominiais.
         </p>
-        <Card className="bg-white/10 backdrop-blur-md border-white/20 p-6 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+        <Card className="bg-green/10 backdrop-blur-md border-gold/20 p-6 animate-fade-in" style={{ animationDelay: '0.2s' }}>
           <div className="flex items-center justify-center gap-2 mb-4">
-            <Phone className="w-5 h-5 text-green-400" />
-            <span className="text-lg font-medium text-green-400">Atendimento Imediato</span>
+            <Phone className="w-5 h-5 text-gold" />
+            <span className="text-lg font-medium text-gold">Atendimento Imediato</span>
           </div>
           <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
             <div className="w-full md:w-auto">
@@ -61,7 +61,7 @@ export function HeroSection() {
                 placeholder="Digite seu nome"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="w-full md:w-64 px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+                className="w-full md:w-64 px-4 py-3 rounded-lg bg-white/10 border border-gold/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-gold/50 transition-all"
               />
               <p className="text-xs text-white/60 mt-2">
                 Resposta em até 5 minutos no horário comercial
@@ -70,7 +70,7 @@ export function HeroSection() {
             <Button
               onClick={handleWhatsAppClick}
               size="lg"
-              className="bg-green-600 hover:bg-green-700 text-white w-full md:w-auto hover-scale transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="bg-gold hover:bg-gold/90 text-white w-full md:w-auto hover-scale transition-all duration-300 shadow-lg hover:shadow-xl"
               disabled={!name.trim()}
             >
               <MessageCircle className="mr-2" />

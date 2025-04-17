@@ -1,5 +1,17 @@
 {
-  "projects": {
-    "default": "nardiniadvogados"
+  "hosting": {
+   "site": "nardiniadvogados",
+    "public": "out",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
   }
 }

@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "nardiniadvogados",
     "public": "out",
     "ignore": [
       "firebase.json",

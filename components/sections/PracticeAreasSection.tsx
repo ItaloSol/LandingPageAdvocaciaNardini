@@ -100,19 +100,6 @@ const civilLawItems = [
 
 const businessLawItems = [
   {
-    title: "Constituição de Empresas",
-    description: "Assessoria completa na abertura de empresas, incluindo escolha do tipo societário e registro, com adequação à LGPD.",
-    icon: <Building className="h-5 w-5 text-gold" />,
-    details: [
-      "Análise do melhor tipo societário",
-      "Elaboração de contratos sociais",
-      "Registro na Junta Comercial",
-      "Obtenção de licenças",
-      "Planejamento tributário inicial",
-      "Adequação para LGPD"
-    ]
-  },
-  {
     title: "Falências",
     description: "Assessoria jurídica em processos de falência e recuperação de ativos.",
     icon: <HeartPulse className="h-5 w-5 text-gold" />,
@@ -121,7 +108,6 @@ const businessLawItems = [
       "Recuperação de ativos",
       "Defesa de credores",
       "Liquidação de bens",
-      "Concordatas"
     ]
   },
   {
@@ -196,11 +182,11 @@ const realEstateAndCondoLawItems = [
     description: "Assessoria jurídica em projetos de reforma e obras em condomínios.",
     icon: <Hammer className="h-5 w-5 text-gold" />,
     details: [
-      "Análise de projetos",
-      "Contratos com fornecedores",
-      "Aprovações legais",
-      "Responsabilidade técnica",
-      "Fiscalização de obras"
+      "Consultoria sobre legislação de obras",
+      "Elaboração de contratos de reforma",
+      "Assessoria em disputas legais de obras",
+      "Orientação sobre responsabilidade civil",
+      "Mediação de conflitos em obras"
     ]
   },
 ];
@@ -320,7 +306,7 @@ export function PracticeAreasSection() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
             <PracticeArea
               title="Direito Civil"
-              description="Especialização em contratos, responsabilidade civil, direito das obrigações e família."
+              description="Especialista em contratos, responsabilidade civil, direito das obrigações e família."
               items={civilLawItems}
               hoverColor="hover:bg-gold/10"
               accentColor="to-gold/10"
@@ -338,7 +324,7 @@ export function PracticeAreasSection() {
             />
             <PracticeArea
               title="Direito Imobiliário e Condominial"
-              description="Assessoria completa em questões imobiliárias e condominiais, desde compra/venda até gestão de condomínios."
+              description="Assessoria completa em questões imobiliárias e condominiais."
               items={realEstateAndCondoLawItems}
               hoverColor="hover:bg-gold/10"
               accentColor="to-gold/10"

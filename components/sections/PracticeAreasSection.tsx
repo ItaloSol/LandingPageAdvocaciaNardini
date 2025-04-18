@@ -121,6 +121,18 @@ const businessLawItems = [
       "Assembleia de credores",
       "Acompanhamento do processo"
     ]
+  },
+  {
+    title: "Assessoria Preventiva",
+    description: "Serviços de assessoria preventiva para empresas.",
+    icon: <ShieldAlert className="h-5 w-5 text-gold" />,
+    details: [
+      "Análise contratual",
+      "Prevenção contencioso consumidor",
+      "Prevenção passivo trabalhista",
+      "Recuperação de crédito extrajudicial",
+      "Adequação a LGPD"
+    ]
   }
 ];
 
